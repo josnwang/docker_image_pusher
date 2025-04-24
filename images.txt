@@ -1,1 +1,1 @@
-nriver/trilium-cn
+mysql:8.0
