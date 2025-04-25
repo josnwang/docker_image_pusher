@@ -1,1 +1,1 @@
-registry.cn-hangzhou.aliyuncs.com/zisokal/authbase:1.1
+klausmeyer/docker-registry-browser
