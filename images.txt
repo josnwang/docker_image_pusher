@@ -1,1 +1,1 @@
-apache/hertzbeat:latest
+gitea/gitea:1.19.0
