@@ -1,1 +1,1 @@
-greenbone/gsa:stable
+mikesplain/openvas
