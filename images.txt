@@ -1,1 +1,1 @@
-mikesplain/openvas
+ghcr.io/sky22333/ansible
