@@ -1,1 +1,1 @@
-ghcr.io/sky22333/ansible
+gitea/gitea:1.23.8
