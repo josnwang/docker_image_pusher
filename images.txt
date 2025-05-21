@@ -1,1 +1,1 @@
-postgis/postgres:13.3
+postgis/postgis:13.3
