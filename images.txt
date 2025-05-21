@@ -1,1 +1,1 @@
-gitea/gitea:1.23.8
+postgis/postgres:13.3
