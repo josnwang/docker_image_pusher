@@ -1,3 +1,1 @@
-mongo:7.0.20-jammy
-mongo:6.0.23-jammy
-mongo:8.0.9-noble⁠
+mongo:8.0
