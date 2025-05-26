@@ -1,1 +1,1 @@
-mongo:8.0
+node:18-alpine
