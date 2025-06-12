@@ -1,1 +1,2 @@
-pytorch/pytorch:2.0.1-cuda11.7-cudnn8-runtime
+bitnami/pgpool:4
+dpage/pgadmin4
