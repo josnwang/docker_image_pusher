@@ -1,2 +1,2 @@
-bitnami/pgpool:4
-dpage/pgadmin4
+bitnami/pgpool:4.4
+postgis/postgis:13-3.6
