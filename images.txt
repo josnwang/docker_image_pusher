@@ -1,2 +1,2 @@
-postgis/postgis:13-3.6
+postgis/postgis:13-3.5
 bitnami/pgpool:4.6.0
