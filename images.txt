@@ -1,2 +1,1 @@
-bitnami/pgpool:4.4
 postgis/postgis:13-3.6
