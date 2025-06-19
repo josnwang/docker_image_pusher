@@ -1,1 +1,1 @@
-haproxy:2.6
+bitnami/patroni
