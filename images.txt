@@ -1,1 +1,1 @@
-bitnami/patroni
+quay.io/coreos/etcd:v3.3.25
