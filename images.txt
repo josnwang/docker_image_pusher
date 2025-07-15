@@ -1,1 +1,1 @@
-vllm/vllm-openai:latest
+ubuntu:focal-20240105
