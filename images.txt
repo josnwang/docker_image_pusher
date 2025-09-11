@@ -1,1 +1,1 @@
-ghcr.io/lukegus/termix:latest
+linuxserver/ffmpeg:latest
