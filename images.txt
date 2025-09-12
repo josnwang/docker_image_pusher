@@ -1,1 +1,1 @@
-linuxserver/ffmpeg:latest
+python:3.8
