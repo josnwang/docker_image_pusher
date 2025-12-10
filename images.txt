@@ -1,1 +1,1 @@
-redis
+ubuntu:jammy
