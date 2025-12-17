@@ -1,2 +1,2 @@
-d3vilh/openvpn-server:latest
-d3vilh/openvpn-ui:latest
+registry.fit2cloud.com/halo/halo:2.21
+postgres:15.4
