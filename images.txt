@@ -1,2 +1,1 @@
-registry.fit2cloud.com/halo/halo:2.21
-postgres:15.4
+polardb/polardb_pg_local_instance:single
