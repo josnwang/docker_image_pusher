@@ -1,1 +1,1 @@
-polardb/polardb_pg_local_instance:14
+docker.1ms.run/yyxx/openvpn
