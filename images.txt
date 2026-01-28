@@ -1,1 +1,1 @@
-docker.1ms.run/yyxx/openvpn
+arm64v8/ubuntu:22.04
