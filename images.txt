@@ -1,1 +1,1 @@
-kaldiasr/kaldi
+ygqygq2/fastdfs-nginx:V6.12.1
