@@ -1,1 +1,1 @@
-kaldiasr/kaldi:latest-arm64
+kaldiasr/kaldi
