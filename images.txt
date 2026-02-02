@@ -1,1 +1,1 @@
---platform=linux/arm64 ygqygq2/fastdfs-nginx:V6.12.1
+sylvaindb/kaldi:arm64
