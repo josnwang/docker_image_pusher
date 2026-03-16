@@ -1,3 +1,4 @@
-20-alpine
-21-alpine
-22-alpine
+node:19-alpine
+node:20-alpine
+node:21-alpine
+node:22-alpine
