@@ -1,1 +1,4 @@
-sylvaindb/kaldi:arm64
+19-alpine
+20-alpine
+21-alpine
+22-alpine
