@@ -1,4 +1,1 @@
-node:19-alpine
-node:20-alpine
-node:21-alpine
-node:22-alpine
+shuzhiyinhang/vexdb:tagname
