@@ -1,1 +1,11 @@
-shuzhiyinhang/vexdb:developer-edition-3.0.0.1
+node:12-alpine --platform linux/arm64
+node:13-alpine --platform linux/arm64
+node:14-alpine --platform linux/arm64
+node:15-alpine --platform linux/arm64
+node:16-alpine --platform linux/arm64
+node:17-alpine --platform linux/arm64
+node:18-alpine --platform linux/arm64
+node:19-alpine --platform linux/arm64
+node:20-alpine --platform linux/arm64
+node:21-alpine --platform linux/arm64
+node:22-alpine --platform linux/arm64
