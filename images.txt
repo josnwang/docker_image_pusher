@@ -1,4 +1,1 @@
---platform linux/arm64  langgenius/dify-plugin-daemon:0.5.2-local
---platform linux/arm64  langgenius/dify-web:1.11.4
---platform linux/arm64  postgres:15-alpine
---platform linux/arm64  ubuntu/squid:latest
+--platform linux/arm64 registry.cn-chengdu.aliyuncs.com/brucewang/linux_arm64_elasticsearch
