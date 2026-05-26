@@ -1,1 +1,1 @@
---platform linux/arm64 node:12-alpine
+--platform linux/arm64 elasticsearch:8.4.1
