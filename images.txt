@@ -1,1 +1,1 @@
---platform linux/arm64 registry.cn-chengdu.aliyuncs.com/brucewang/linux_arm64_elasticsearch
+--platform linux/arm64 svcvit/dify-sandbox-py:0.1.3
