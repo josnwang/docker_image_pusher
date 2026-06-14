@@ -1,1 +1,1 @@
-ghcr.io/komari-monitor/komari:1.2.1
+ghcr.io/komari-monitor/komari:latest
