@@ -1,1 +1,1 @@
---platform linux/arm64 quay.io/ascend/vllm-ascend:v0.11.0rc0
+ghcr.io/komari-monitor/komari:1.2.1
