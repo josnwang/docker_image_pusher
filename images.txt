@@ -1,1 +1,1 @@
-zabbix/zabbix-agent:alpine-7.4-latest
+ghcr.io/astral-sh/uv:python3.13-bookworm-slim
