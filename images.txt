@@ -1,1 +1,1 @@
-ghcr.io/astral-sh/uv:python3.13-bookworm-slim
+ghcr.io/alysko/zabbix-mcp:latest
