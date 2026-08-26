@@ -1,1 +1,1 @@
-quay.io/influxdb/influxdb3-core:latest
+nousresearch/hermes-agent:latest
