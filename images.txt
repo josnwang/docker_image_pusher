@@ -1,2 +1,2 @@
-bitnamilegacy/postgresql-repmgr:16
-bitnamilegacy/pgpool:4.6.3-debian-12-r0
+bitnami/postgresql-repmgr:16
+bitnami/pgpool:4.6.3-debian-12-r0
