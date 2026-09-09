@@ -1,2 +1,2 @@
-ghcr.io/bitnami/postgresql-repmgr:16.3.0
-ghcr.io/bitnami/pgpool:4.6.3-debian-12-r0
+quay.io/bitnami/postgresql-repmgr:16.3.0
+quay.io/bitnami/pgpool:4.6.3-debian-12-r0
