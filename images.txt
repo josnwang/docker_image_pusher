@@ -1,3 +1,6 @@
-node:23-alpine
-node:24-alpine
-node:25-alpine
+mongo:4.2.1
+mongo:4.4
+mongo:5
+mongo:6
+mongo:7
+mongo:8
