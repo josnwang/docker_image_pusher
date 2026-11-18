@@ -1,1 +1,1 @@
-docker.elastic.co/kibana/kibana:8.4.1
+--platform linux/arm64 greatsql/greatsql:8.0.32-25-aarch64
