@@ -1,1 +1,1 @@
---platform linux/arm64 greatsql/greatsql:8.0.32-24-aarch64
+--platform linux/arm64 nginx:1.31.8
