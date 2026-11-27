@@ -23,13 +23,13 @@ jobs:
         echo "Before freeing up disk space"
         echo "=============================================================================="
         df -hT
+        df -i
         echo "=============================================================================="
 
-    # 增加可用磁盘空间，开启更多清理组件
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
       with:
-        root-reserve-mb: 2048
+        root-reserve-mb: 1024
         swap-size-mb: 128
         remove-dotnet: 'true'
         remove-haskell: 'true'
@@ -37,23 +37,36 @@ jobs:
         remove-codeql: 'true'
         remove-azure-cli: 'true'
         remove-rust: 'true'
+        remove-llvm: 'true'
         build-mount-path: '/var/lib/docker/'
 
     - name: Restart docker
       run: sudo service docker restart
+
+    # ========== 核心新增：迁移 containerd 到104G大卷 ==========
+    - name: Move containerd to the large build volume
+      run: |
+        sudo systemctl stop containerd
+        sudo mkdir -p /var/lib/docker/containerd
+        sudo rsync -a /var/lib/containerd/ /var/lib/docker/containerd/
+        sudo rm -rf /var/lib/containerd
+        sudo tee /etc/containerd/config.toml <<EOF
+version = 2
+root = "/var/lib/docker/containerd"
+state = "/run/containerd"
+EOF
+        sudo systemctl start containerd
 
     - name: Free up disk space complete
       run: |
         echo "Free up disk space complete"
         echo "=============================================================================="
         df -hT
+        df -i
         echo "=============================================================================="
 
     - name: Checkout Code
       uses: actions/checkout@v4
-
-    - name: Docker Setup Buildx
-      uses: docker/setup-buildx-action@v3
 
     - name: Build and push image Aliyun
       run: |
@@ -149,7 +162,6 @@ jobs:
             echo "=============================================================================="
             docker rmi $image
             docker rmi $new_image
-            # 重点：触发containerd底层回收，解决meta.db磁盘占满
             sudo crictl prune
             sudo docker system prune -f
             echo "磁盘空间清理完毕"
@@ -158,6 +170,5 @@ jobs:
             echo "=============================================================================="     
             
         done < images.txt
-        # 全部镜像跑完后全局再清理一次
         sudo crictl prune
         sudo docker system prune -af
