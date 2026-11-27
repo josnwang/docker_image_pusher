@@ -25,18 +25,18 @@ jobs:
         df -hT
         echo "=============================================================================="
 
-    # 增加可用磁盘空间
+    # 增加可用磁盘空间，开启更多清理组件
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
       with:
-
         root-reserve-mb: 2048
         swap-size-mb: 128
         remove-dotnet: 'true'
         remove-haskell: 'true'
-        # 如果空间还是不够用，可以把以下开启，清理出更多空间
-        # remove-android: 'true'
-        # remove-codeql: 'true'
+        remove-android: 'true'
+        remove-codeql: 'true'
+        remove-azure-cli: 'true'
+        remove-rust: 'true'
         build-mount-path: '/var/lib/docker/'
 
     - name: Restart docker
@@ -149,9 +149,15 @@ jobs:
             echo "=============================================================================="
             docker rmi $image
             docker rmi $new_image
+            # 重点：触发containerd底层回收，解决meta.db磁盘占满
+            sudo crictl prune
+            sudo docker system prune -f
             echo "磁盘空间清理完毕"
             echo "=============================================================================="
             df -hT
             echo "=============================================================================="     
             
         done < images.txt
+        # 全部镜像跑完后全局再清理一次
+        sudo crictl prune
+        sudo docker system prune -af
